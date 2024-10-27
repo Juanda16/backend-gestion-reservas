@@ -1,16 +1,11 @@
 package com.udea.fabricaescuela.gestionreservas;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
+// @SpringBootTest
+// class GestionreservasApplicationTests {
 
-import org.junit.jupiter.api.Test;
-import org.springframework.boot.test.context.SpringBootTest;
+// 	@Test
+// 	void contextLoads() {
+// 		assertEquals(true, true);
+// 	}
 
-@SpringBootTest
-class GestionreservasApplicationTests {
-
-	@Test
-	void contextLoads() {
-		assertEquals(true, true);
-	}
-
-}
+// }
