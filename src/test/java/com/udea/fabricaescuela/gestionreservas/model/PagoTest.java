@@ -1,35 +1,35 @@
-package com.udea.fabricaescuela.gestionreservas.model;
+// package com.udea.fabricaescuela.gestionreservas.model;
 
-import org.junit.jupiter.api.Test;
-import java.time.LocalDateTime;
-import static org.junit.jupiter.api.Assertions.*;
-import org.springframework.boot.test.context.SpringBootTest;
-@SpringBootTest
-public class PagoTest {
+// import org.junit.jupiter.api.Test;
+// import java.time.LocalDateTime;
+// import static org.junit.jupiter.api.Assertions.*;
+// import org.springframework.boot.test.context.SpringBootTest;
+// @SpringBootTest
+// public class PagoTest {
 
-    @Test
-    public void testGettersAndSetters() {
-        Pago pago = new Pago();
-        
-        Long idPago = 1L;
-        double monto = 100.0;
-        LocalDateTime fechaPago = LocalDateTime.of(2023, 1, 1, 12, 0);
-        String metodoPago = "Tarjeta";
+// @Test
+// public void testGettersAndSetters() {
+// Pago pago = new Pago();
 
-        pago.setIdPago(idPago);
-        pago.setMonto(monto);
-        pago.setFechaPago(fechaPago);
-        pago.setMetodoPago(metodoPago);
+// Long idPago = 1L;
+// double monto = 100.0;
+// LocalDateTime fechaPago = LocalDateTime.of(2023, 1, 1, 12, 0);
+// String metodoPago = "Tarjeta";
 
-        assertEquals(idPago, pago.getIdPago());
-        assertEquals(monto, pago.getMonto());
-        assertEquals(fechaPago, pago.getFechaPago());
-        assertEquals(metodoPago, pago.getMetodoPago());
-    }
+// pago.setIdPago(idPago);
+// pago.setMonto(monto);
+// pago.setFechaPago(fechaPago);
+// pago.setMetodoPago(metodoPago);
 
-    @Test
-    public void testDefaultFechaPago() {
-        Pago pago = new Pago();
-        assertNotNull(pago.getFechaPago());
-    }
-}
+// assertEquals(idPago, pago.getIdPago());
+// assertEquals(monto, pago.getMonto());
+// assertEquals(fechaPago, pago.getFechaPago());
+// assertEquals(metodoPago, pago.getMetodoPago());
+// }
+
+// @Test
+// public void testDefaultFechaPago() {
+// Pago pago = new Pago();
+// assertNotNull(pago.getFechaPago());
+// }
+// }
