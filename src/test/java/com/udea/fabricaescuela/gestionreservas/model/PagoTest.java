@@ -1,35 +1,41 @@
-// package com.udea.fabricaescuela.gestionreservas.model;
+package com.udea.fabricaescuela.gestionreservas.model;
 
-// import org.junit.jupiter.api.Test;
-// import java.time.LocalDateTime;
-// import static org.junit.jupiter.api.Assertions.*;
-// import org.springframework.boot.test.context.SpringBootTest;
-// @SpringBootTest
-// public class PagoTest {
+import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.extension.ExtendWith;
 
-// @Test
-// public void testGettersAndSetters() {
-// Pago pago = new Pago();
+import java.time.LocalDateTime;
+import static org.junit.jupiter.api.Assertions.*;
+import org.springframework.test.context.ContextConfiguration;
+import org.springframework.test.context.junit.jupiter.SpringExtension;
 
-// Long idPago = 1L;
-// double monto = 100.0;
-// LocalDateTime fechaPago = LocalDateTime.of(2023, 1, 1, 12, 0);
-// String metodoPago = "Tarjeta";
 
-// pago.setIdPago(idPago);
-// pago.setMonto(monto);
-// pago.setFechaPago(fechaPago);
-// pago.setMetodoPago(metodoPago);
+@ExtendWith(SpringExtension.class)
+@ContextConfiguration(classes = {Pago.class})
+public class PagoTest {
 
-// assertEquals(idPago, pago.getIdPago());
-// assertEquals(monto, pago.getMonto());
-// assertEquals(fechaPago, pago.getFechaPago());
-// assertEquals(metodoPago, pago.getMetodoPago());
-// }
+@Test
+public void testGettersAndSetters() {
+Pago pago = new Pago();
 
-// @Test
-// public void testDefaultFechaPago() {
-// Pago pago = new Pago();
-// assertNotNull(pago.getFechaPago());
-// }
-// }
+Long idPago = 1L;
+double monto = 100.0;
+LocalDateTime fechaPago = LocalDateTime.of(2023, 1, 1, 12, 0);
+String metodoPago = "Tarjeta";
+
+pago.setIdPago(idPago);
+pago.setMonto(monto);
+pago.setFechaPago(fechaPago);
+pago.setMetodoPago(metodoPago);
+
+assertEquals(idPago, pago.getIdPago());
+assertEquals(monto, pago.getMonto());
+assertEquals(fechaPago, pago.getFechaPago());
+assertEquals(metodoPago, pago.getMetodoPago());
+}
+
+@Test
+public void testDefaultFechaPago() {
+Pago pago = new Pago();
+assertNotNull(pago.getFechaPago());
+}
+}

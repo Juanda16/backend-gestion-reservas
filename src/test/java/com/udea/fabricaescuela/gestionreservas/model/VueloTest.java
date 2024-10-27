@@ -1,59 +1,63 @@
-// package com.udea.fabricaescuela.gestionreservas.model;
+package com.udea.fabricaescuela.gestionreservas.model;
 
-// import org.junit.jupiter.api.Test;
-// import static org.junit.jupiter.api.Assertions.*;
-// import java.time.LocalDate;
-// import java.time.LocalTime;
-// import org.springframework.boot.test.context.SpringBootTest;
+import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.extension.ExtendWith;
 
-// @SpringBootTest
-// public class VueloTest {
+import static org.junit.jupiter.api.Assertions.*;
+import java.time.LocalDate;
+import java.time.LocalTime;
+import org.springframework.test.context.ContextConfiguration;
+import org.springframework.test.context.junit.jupiter.SpringExtension;
 
-// @Test
-// public void testGettersAndSetters() {
-// Vuelo vuelo = new Vuelo();
-// Avion avion = new Avion();
-// LocalDate fechaSalida = LocalDate.of(2023, 10, 1);
-// LocalTime horaSalida = LocalTime.of(10, 30);
-// LocalDate fechaLlegada = LocalDate.of(2023, 10, 1);
-// LocalTime horaLlegada = LocalTime.of(12, 30);
+@ExtendWith(SpringExtension.class)
+@ContextConfiguration(classes = {Vuelo.class, Avion.class})
+public class VueloTest {
 
-// vuelo.setIdVuelo(1L);
-// vuelo.setAvion(avion);
-// vuelo.setOrigen("Medellin");
-// vuelo.setDestino("Bogota");
-// vuelo.setFechaSalida(fechaSalida);
-// vuelo.setHoraSalida(horaSalida);
-// vuelo.setFechaLlegada(fechaLlegada);
-// vuelo.setHoraLlegada(horaLlegada);
-// vuelo.setEstadoVuelo("En vuelo");
-// vuelo.setPrecioBase(200.0);
+@Test
+public void testGettersAndSetters() {
+Vuelo vuelo = new Vuelo();
+Avion avion = new Avion();
+LocalDate fechaSalida = LocalDate.of(2023, 10, 1);
+LocalTime horaSalida = LocalTime.of(10, 30);
+LocalDate fechaLlegada = LocalDate.of(2023, 10, 1);
+LocalTime horaLlegada = LocalTime.of(12, 30);
 
-// assertEquals(1L, vuelo.getIdVuelo());
-// assertEquals(avion, vuelo.getAvion());
-// assertEquals("Medellin", vuelo.getOrigen());
-// assertEquals("Bogota", vuelo.getDestino());
-// assertEquals(fechaSalida, vuelo.getFechaSalida());
-// assertEquals(horaSalida, vuelo.getHoraSalida());
-// assertEquals(fechaLlegada, vuelo.getFechaLlegada());
-// assertEquals(horaLlegada, vuelo.getHoraLlegada());
-// assertEquals("En vuelo", vuelo.getEstadoVuelo());
-// assertEquals(200.0, vuelo.getPrecioBase());
-// }
+vuelo.setIdVuelo(1L);
+vuelo.setAvion(avion);
+vuelo.setOrigen("Medellin");
+vuelo.setDestino("Bogota");
+vuelo.setFechaSalida(fechaSalida);
+vuelo.setHoraSalida(horaSalida);
+vuelo.setFechaLlegada(fechaLlegada);
+vuelo.setHoraLlegada(horaLlegada);
+vuelo.setEstadoVuelo("En vuelo");
+vuelo.setPrecioBase(200.0);
 
-// @Test
-// public void testDefaultValues() {
-// Vuelo vuelo = new Vuelo();
+assertEquals(1L, vuelo.getIdVuelo());
+assertEquals(avion, vuelo.getAvion());
+assertEquals("Medellin", vuelo.getOrigen());
+assertEquals("Bogota", vuelo.getDestino());
+assertEquals(fechaSalida, vuelo.getFechaSalida());
+assertEquals(horaSalida, vuelo.getHoraSalida());
+assertEquals(fechaLlegada, vuelo.getFechaLlegada());
+assertEquals(horaLlegada, vuelo.getHoraLlegada());
+assertEquals("En vuelo", vuelo.getEstadoVuelo());
+assertEquals(200.0, vuelo.getPrecioBase());
+}
 
-// assertNull(vuelo.getIdVuelo());
-// assertNull(vuelo.getAvion());
-// assertNull(vuelo.getOrigen());
-// assertNull(vuelo.getDestino());
-// assertNull(vuelo.getFechaSalida());
-// assertNull(vuelo.getHoraSalida());
-// assertNull(vuelo.getFechaLlegada());
-// assertNull(vuelo.getHoraLlegada());
-// assertNull(vuelo.getEstadoVuelo());
-// assertEquals(0.0, vuelo.getPrecioBase());
-// }
-// }
+@Test
+public void testDefaultValues() {
+Vuelo vuelo = new Vuelo();
+
+assertNull(vuelo.getIdVuelo());
+assertNull(vuelo.getAvion());
+assertNull(vuelo.getOrigen());
+assertNull(vuelo.getDestino());
+assertNull(vuelo.getFechaSalida());
+assertNull(vuelo.getHoraSalida());
+assertNull(vuelo.getFechaLlegada());
+assertNull(vuelo.getHoraLlegada());
+assertNull(vuelo.getEstadoVuelo());
+assertEquals(0.0, vuelo.getPrecioBase());
+}
+}
