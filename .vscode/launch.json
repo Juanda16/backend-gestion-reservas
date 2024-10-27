@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-GestionreservasApplication<gestionreservas>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.udea.fabricaescuela.gestionreservas.GestionreservasApplication",
+            "projectName": "gestionreservas",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}

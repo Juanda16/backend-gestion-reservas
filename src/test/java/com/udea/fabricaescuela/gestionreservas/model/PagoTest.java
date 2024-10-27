@@ -3,7 +3,8 @@ package com.udea.fabricaescuela.gestionreservas.model;
 import org.junit.jupiter.api.Test;
 import java.time.LocalDateTime;
 import static org.junit.jupiter.api.Assertions.*;
-
+import org.springframework.boot.test.context.SpringBootTest;
+@SpringBootTest
 public class PagoTest {
 
     @Test

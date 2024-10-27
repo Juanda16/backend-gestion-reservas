@@ -4,7 +4,9 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 import java.time.LocalDate;
 import java.time.LocalTime;
+import org.springframework.boot.test.context.SpringBootTest;
 
+@SpringBootTest
 public class VueloTest {
 
     @Test
