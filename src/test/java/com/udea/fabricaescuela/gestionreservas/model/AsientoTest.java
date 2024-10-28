@@ -11,7 +11,6 @@ import org.springframework.test.context.junit.jupiter.SpringExtension;
 @ExtendWith(SpringExtension.class)
 @ContextConfiguration(classes = {Asiento.class, Vuelo.class})
 public class AsientoTest {
-
     @Test
     public void testGettersAndSetters() {
         Asiento asiento = new Asiento();
